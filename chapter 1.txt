@@ -1,0 +1,64 @@
+//WAP to calculate area of a rectangle.
+
+//WAP to a C language to find area of rectangle.
+
+#include <stdio.h>
+
+int main()
+{
+    int length = 3, breath = 4;
+    int area = length * breath;
+    printf("The area of rectangle is %d", area);
+    return 0;
+}
+
+#include <stdio.h>
+
+int main()
+{
+    int length, breath;
+    printf("What is the length of rectangle");
+    scanf("%d",&length);
+    
+    printf("What is the breath of rectangle");
+    scanf("%d",&breath);
+    
+    printf("The area of rectangle is %d", length*breath);
+    
+    
+
+    return 0;
+}
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+// Calculate the area of a circle and modify the same program to calculate the volume of a cylinder given its radius and height.
+#include <stdio.h>
+
+int main()
+{
+    int radius = 3;
+    float pi = 3.14;
+    
+    printf("The area of this cylinder is %f\n",pi*radius*radius);
+    int height = 4;
+    
+    printf("The volume of a cylinder is %f\n", pi*radius*radius*height);
+
+    return 0;
+}
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+// WAP to calculate simple interest for a set of values representing principal, no of years and rate of interest.
+#include <stdio.h>
+
+int main()
+{
+    int principal= 100, rate = 4,year = 2;
+    int simpleInterest = (principal*rate*year)/100;
+    
+    printf("The value of simple interest is %d",simpleInterest);
+    return 0;
+}
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+

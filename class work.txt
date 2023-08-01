@@ -1,0 +1,80 @@
+// WAP to add two numbers using class and object?
+
+#include<iostream>
+using namespace std;
+
+class Add {
+
+public:
+    int add(int x, int y) {
+        return x + y;
+    }
+};
+
+int main() {
+
+    int x, y, sum;
+
+    cout << "Enter two numbers:";
+    cin >> x >> y;
+
+    Add obj;
+    sum = obj.add(x, y);
+
+    cout << "Sum of two numbers:" << sum;
+
+    return 0;
+}
+----------------------------------------------------------------------------------------------------------------
+// WAP to demonstrate the concept of static function?
+
+#include <iostream>
+#include <string>
+using namespace std;
+  
+void demo()
+{ 
+    // static variable
+    static int count = 0;
+    cout << count << " ";
+      
+    // value is updated and
+    // will be carried to next
+    // function calls
+    count++;
+}
+  
+int main()
+{
+    for (int i=0; i<5; i++)    
+        demo();
+    return 0;
+}
+
+----------------------------------------------------------------------------------------------------------
+// WAP to demonstrate the concept of friend function?
+#include<iostream.h>
+#include<conio.h>
+
+class base {
+    int value1, value2;
+public:
+
+    void get() {
+        cout << "Enter two values:";
+        cin >> val1>>val2;
+    }
+    friend float mean(base ob);
+};
+
+float mean(base ob) {
+    return float(ob.value1 + ob.value2) / 2;
+}
+
+void main() {
+    clrscr();
+    base obj;
+    obj.get();
+    cout << "\n Mean value is : " << mean(obj);
+    getch();
+}

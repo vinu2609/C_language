@@ -1,0 +1,208 @@
+// C Program to check whether a number is even or odd.
+#include<stdio.h>
+int main()
+{
+    int a,b;
+    printf("Enter a number\n");
+    scanf("%d",&a);
+
+    if(a%2==0){
+        printf("%d is even\n",a);
+    }
+    else{
+        printf("%d is odd\n",a);
+    }
+    return 0;
+}
+----------------------------------------------------------------------------------------------------------------------------
+#include<stdio.h>
+int main(){
+    int age;
+    printf("Enter your age\n");
+    scanf("%d",&age);
+    
+    if (age>=90){
+        printf("You can above 90, you cannot drive");
+    }
+    else{
+        printf("You can drive");
+    }
+
+    return 0;
+} 
+------------------------------------------------------------------------------------------------------------------------------------   
+// Logical operaters..
+#include<stdio.h>
+int main(){
+    int age;
+
+    printf("Enter your age\n");
+    scanf("%d",&age);
+
+    if(age<=80 && age>=18){
+        printf("You are above 18 and below 80, You can drive\n");
+    }
+
+    else{
+        printf("You cannot drive\n");
+    }
+}
+-----------------------------------------------------------------------------------------------------------------------------------
+//if_else_if condition..
+#include<stdio.h>
+int main()
+{
+    int num;
+
+    printf("Enter your num\n");
+    scanf("%d",&num);
+
+    if(num==1){
+        printf("The number is 1\n");
+    }
+
+    else if(num==2){
+        printf("The number is 2\n");
+    }
+
+    else if(num==3){
+        printf("The number is 3\n");
+    }
+
+    else{
+        printf("The number is not 1, 2, 3\n");
+    }
+}
+-----------------------------------------------------------------------------------------------------------------------------------------
+ternary......(one linear)
+#include<stdio.h>
+int main()
+{
+    int a;
+    printf("Enter a\n");
+    scanf("%d",&a);
+
+    //one linear
+    (a < 5) ? printf("A is less than 5") : printf("A is not less than 5");
+}
+----------------------------------------------------------------------------------------------------------------------------------------
+Switch Case..
+#include<stdio.h>
+int main()
+{
+    int rating;
+    printf("Enter your rating (1-5)\n");
+    scanf("%d",&rating);
+    switch(rating){
+        case 1:
+            printf("Your rating is 1\n");
+
+        case 2:
+            printf("Your rating is 2\n"); 
+        
+        case 3:
+            printf("Your rating is 3\n");  
+
+        case 4:
+            printf("Your rating is 4\n");   
+
+        case 5:
+            printf("Your rating is 5\n");  
+
+        default:
+            printf("Invalid rating");            
+    }
+}  
+----------------------------------------------------------------------------------------------------------------------------- 
+Pratice Sets...
+//What will be the output of this program.
+#include<stdio.h>
+int main()
+{
+    int a = 10;
+    if(a=11){
+        printf("I am 11");    
+    }
+    else{
+        printf("I am not 11");
+    }
+}
+// Answer is ("I am 11")because use a only one equaltwo and this is not relational operators.
+----------------------------------------------------------------------------------------------------------------------------------
+/* Writea program to find out whether a student is pass or fail;if it requires total 40% and
+atleast 33% in each subject  to pass. Assume 3 subjects and take marks as an input from the 
+user*/
+#include<stdio.h>
+int main()
+{
+    int physics, chemistry, maths;
+    float total;
+
+    printf("Enter a Physics number\n");
+    scanf("%d",&physics);
+
+    printf("Enter a Chemistry number\n");
+    scanf("%d",&chemistry);
+
+    printf("Enter a Maths number\n");
+    scanf("%d",&maths);
+    
+    total =(physics + chemistry + maths)/3;
+
+    if((total<40) || physics<33 || chemistry<33 || maths<33){
+        printf("Your total percentage is %f and you are fail\n",total);
+    }
+
+    else{
+        printf("Your total percentage is %f and you are pass\n", total);
+    }
+}  
+----------------------------------------------------------------------------------------------------------------------------------
+// Calculate income tax paid by an employers to the government as per the slabs mentioned below:
+/* Income slab          Tax
+    2.5L-5.0L            5%
+    5.0L-10.0L           20%
+    Above 10.0L          30% 
+ Note that there is no tax below 2.5L. Take income amount as an input from the user*/
+
+#include<stdio.h>
+int main()
+{
+    float tax= 0,income;
+    printf("Enter your income\n");
+    scanf("%f",&income);
+
+    if(income>=250000 && income<=500000){
+        tax = tax + 0.05 *(income - 250000);
+    }
+
+    if(income>=500000 && income<=1000000){
+        tax = tax + 0.20 *(income - 500000);
+    }
+
+    if(income>=1000000){
+        tax = tax + 0.30 *(income - 1000000);
+    }
+
+    printf ("Your net income tax to be paid by 26th of this month is %f\n",tax);
+
+}  
+--------------------------------------------------------------------------------------------------------------------------------
+// Write a program to determine whether a character entered  by the user the lowercase or not.
+#include <stdio.h>
+int main()
+{
+    char ch;
+    printf("Enter a character\n");
+    scanf("%c",&ch);
+
+    if(ch>=97 && 122>=ch){
+        printf("It is lowercase");
+    }
+    else{
+        printf("It is not lowercase");
+    }
+}
+----------------------------------------------------------------------------------------------------------------------------------
+        
+     

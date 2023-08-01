@@ -1,0 +1,194 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+   cout<<"Hello";
+   cout<<endl;
+   cout<<"Welcome to C++";
+
+    return 0;
+}
+****************************************************************************************
+Alternate Way
+
+#include <iostream>
+
+using namespace std;
+int main()
+{
+    cout<<"Hello"<<endl<<"Welcome to C++";
+    
+
+    return 0;
+}
+*******************************************************************************************
+// WAP to get 2 numbers from user and print sum of them.
+
+#include <iostream>
+
+using namespace std;
+int main()
+{
+    int a,b;
+    cout<<"Enter a first value :";
+    cin>>a;
+    
+    cout<<"Enter a second value :";
+    cin>>b;
+    int c = a+b;
+    
+    cout<<"The sum of "<<a<<" and " <<b<< " is " <<c;
+    
+    
+    
+
+    return 0;
+}
+******************************************************************************************
+#include <iostream>
+
+using namespace std;
+int main()
+{
+    int a =10;
+    cout<<"The value of a is "<<a;
+    
+}
+******************************************************************************************
+// WAP  to get 2 numbers from user and print sum, sub, multiplication & divisions of 2 entered numbers.
+
+#include <iostream>
+
+using namespace std;
+int main()
+{
+    int a,b,c;
+    
+    cout<<"Enter 2 Values";
+    cin>>a>>b;
+    
+    c = a+b;
+    cout<<"The sum of "<<a<<" and "<<b<<" is "<<c<<endl;
+    
+    c = a-b;
+    cout<<"The sub of "<<a<<" and "<<b<<" is "<<c<<endl;
+    
+    c = a*b;
+    cout<<"The multi of "<<a<<" and "<<b<<" is "<<c<<endl;
+    
+    c = a/b;
+    cout<<"The divide of "<<a<<" and "<<b<<" is "<<c;
+    
+    return 0;
+}
+
+***********************************************************************************************
+// WAP  to get marks of 4 subjects and print total & average of them.
+
+#include <iostream>
+
+using namespace std;
+int main()
+{
+    int hindi,english,maths,science, total;
+    float a;
+    
+    cout<<"Enter a marks in hindi";
+    cin>>hindi;
+    
+    cout<<"Enter a marks in english";
+    cin>>english;
+    
+    cout<<"Enter a marks in maths";
+    cin>>maths;
+    
+    cout<<"Enter a marks in science";
+    cin>>science;
+    
+    total = hindi+english+maths+science;
+    a = total/4.0;
+    
+    cout<<" Total Marks "<<total<<endl;
+    cout<<" Average Marks "<<a;
+    
+    return 0;
+    
+}
+
+****************************************************************************************************
+//Unary operator
+
+#include <iostream>
+
+using namespace std;
+int main()
+{
+    int a = 10;
+    ++a;
+    cout<<a;
+    
+    return 0;
+    
+}
+**************************************************************************************************
+//Unary operator
+
+#include <iostream>
+
+using namespace std;
+int main()
+{
+    int a= 16,b;
+    b = a++;
+    
+    cout<<a<<endl<<b;
+    
+    return 0;
+    
+}
+***************************************************************************************************
+//Unary operator
+
+#include <iostream>
+
+using namespace std;
+int main()
+{
+    int a= 10,b,c,d;
+    b = ++a;
+    c = b++;
+    d = ++c;
+    a = d++;
+    
+    cout<<a<<endl<<b<<endl<<c<<endl<<d;
+    
+    return 0;
+    
+}
+****************************************************************************************************
+//Binary operator
+
+// WAP to get 2 numbers from users and perform swapping between them.
+// with using third variables
+
+
+#include <iostream>
+
+using namespace std;
+int main()
+{
+    int a = 10, b = 20, c;
+    
+    cout<<"Before swap a="<<a<<" and b="<<b<<endl;
+    c = b;
+    b = a;
+    a = c;
+    
+    cout<<"After swap a="<<a<<" and b="<<b;
+   
+    return 0;
+    
+}
+****************************************************************************************************

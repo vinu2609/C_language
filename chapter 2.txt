@@ -1,0 +1,116 @@
+// Type declaration instruction.
+
+#include <stdio.h>
+int main()
+{
+    int a = 4,b,c; //Type declaration instruction.
+    b = c = a;
+    printf("The value of a is %d\n",a);
+    printf("The value of b is %d\n",b);
+    printf("The value of c is %d\n",c);
+}
+-----------------------------------------------------------------------------------------------------------------------------------
+// Arithmathic instruction.
+
+#include <stdio.h>
+int main()
+{
+    int a = 6;
+    int b = 8;
+
+    printf("The value of a + b is %d\n", a + b);
+    printf("The value of a - b is %d\n", a - b);
+    printf("The value of a * b is %d\n", a * b);
+    printf("The value of a / b is %d\n", a / b);
+
+    int z;
+    z = b * a; //Legal
+    // b * a = z; // Inlegal
+    printf("The value of z is %d\n",b*a);
+
+    printf("5 when divided by 2 leave a remainder of %d\n" ,5%2);
+
+    // No operator is assumed to be present
+    // printf("The value of 4*5 is %d\n",(4)(5));  ------> Will not return 20/ Wrong!!
+    printf("The value of 4*5 is %d\n",(4)*(5));
+
+    // There is no operator to perform exponentiation in C
+    printf("The value of 4^5 is %d\n", 4^5); //Will not produce 4 to the power 5
+
+    printf("The value of 2 to the power 5 is %f\n",pow(2,5));
+}
+--------------------------------------------------------------------------------------------------------------------------------
+// Operator Precedence in C.
+#include <stdio.h>
+
+int main()
+{
+    int x = 2;
+    int y = 3;
+    printf("The value of 3*x - 8*y is %d\n",3*x - 8*y);
+    printf("The value of 8*y / 3*x is %d\n",8*y / 3*x);
+    // 8*3 /3*x = 24/6 will give wrong answer
+    // 24/3*2
+    // 8*2
+    // 16
+    return 0;
+
+}
+----------------------------------------------------------------------------------------------------------------------------------------
+Practice Set......
+//Which of the following is Invalid in C?
+
+#include <stdio.h>
+
+int main()
+{
+    int v = 3^3;
+    return 0;		//valid
+}
+
+//What data type will 3.0/8-2 return?
+#include <stdio.h>
+
+int main()
+{
+    float a = 3.0;
+    int b = 8;
+    printf("The value of a/b is %f\n",a/b-2);
+    return 0;
+}
+
+// Write a program to check whether a number is divisiable by 97 or not?
+#include <stdio.h>
+
+int main()
+{
+    int num;
+    printf("Enter a number\n");
+    scanf("%d", &num);
+    printf("Divisiable test return: %d\n",num%97);
+    return 0;
+}
+
+// Explain step by step evaluation of 3*x/y-z+k, where x = 2, y = 3, z = 3,k = 1
+#include <stdio.h>
+int main()
+{
+    int x = 2;
+    int y = 3;
+    int z = 3;
+    int k = 1;
+    printf("The value of 3*x/y-z+k is %d\n",3*x/y-z+k);
+    // 6/3-z+k
+    // 2-3+k
+    // -1+1
+    // 0
+}
+
+//3.0+1 will be:
+-->Floating Point Number.
+
+
+
+
+
+

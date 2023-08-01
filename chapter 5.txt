@@ -1,0 +1,147 @@
+//Basic Function.....
+#include <stdio.h>
+void display();                         //Declaration
+
+int main(){
+    int a;
+    display();                          //Calling
+    return 0;
+}
+
+void display(){
+    printf("Hi, Iam display");          //Definition
+}
+-------------------------------------------------------------------------------------------------------------
+// Quick Quiz.........
+// Write a program with three program....
+
+#include <stdio.h>
+void goodmorning();
+void goodafternoon();
+void goodnight();
+
+int main()
+{
+    goodmorning();
+    goodafternoon();
+    goodnight();
+}
+
+void goodmorning(){
+    printf("Good Morning\n");
+}
+void goodafternoon(){
+    printf("Good Afternoon\n");
+}
+void goodnight(){
+    printf("Good Night\n");
+}
+--------------------------------------------------------------------------------------------------
+//Quick Quiz.....
+// Use the library functions to calculate the area of square with side a.
+
+#include <stdio.h>
+#include <math.h>
+
+int main(){
+    int side;
+    
+    printf("Enter the value of side\n");
+    scanf("%d", &side);
+    printf("The area of a square is %f", pow(side,2));
+}
+------------------------------------------------------------------------------------------------------
+// Local and Global variable.
+
+#include <stdio.h>
+void add();
+int a,b,c;                  //Global variable
+
+void main(){
+    printf("Enter the first value :");
+    scanf("%d", &a);
+
+    printf("Enter the second value :");
+    scanf("%d", &b);
+
+    add();
+    printf("Sum of %d and %d = %d", a,b,c);
+}
+
+void add(){
+    c = a+b;
+}
+[ Ye program sahi h but safe nhii h. because we have using Global Variable.]
+------------------------------------------------------------------------------------------------------------
+
+#include <stdio.h>
+void add (int a,int b);
+
+void main(){
+    int a,b;                                //Local Variable
+     printf("Enter the first value :");
+    scanf("%d", &a);
+
+    printf("Enter the second value :");
+    scanf("%d", &b);
+
+    add(a,b);
+
+}
+void add (int a, int b){
+    int c;
+    c = a + b;
+    printf("Sum = %d",c);
+}
+--------------------------------------------------------------------------------------------------------------
+// Call by value and return by value.
+
+#include <stdio.h>
+int add (int a,int b);
+
+void main(){
+    int a,b,c;                          //Local Variable
+    printf("Enter the first value :");
+    scanf("%d", &a);
+
+    printf("Enter the second value :");
+    scanf("%d", &b);
+
+    c = add(a,b);
+    printf("Sum = %d",c);
+
+}
+int add (int a, int b){
+    int c;
+    c = a + b;
+    return c;
+    
+}
+------------------------------------------------------------------------------------------------------------------
+// Referance & Array as an argument.
+
+#include <stdio.h>
+int add ( int a[]);
+
+void main (){
+    int x[] = {10,20,30,40,50};
+    int y[] = {1,2,3,4,5};
+    int sum;
+
+    sum = add(x);
+    printf("Sum of all the elements of x is %d\n",sum);
+
+    sum = add(y);
+    printf("Sum of all the elements of y is %d",sum);
+
+}
+
+int add ( int a[])
+{
+    int i, sum=0;
+    for(i=0; i<5;i++){
+        sum = sum + a[i];
+    }
+    return sum;
+}
+------------------------------------------------------------------------------------------------------------------
